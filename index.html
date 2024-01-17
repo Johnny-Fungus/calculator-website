@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--
+        type in 2 numbers and be able to either add, subtract, multiply, or divide them
+        2 boxes, one number in each box
+        click on button to select operation
+        answer is displayed and input boxes are cleared
+    -->
+    <div>
+        <label for="first entry box">first number</label>
+        <input type="text", id="first entry box", name="first num">
+        <br>
+        <label for="second entry box">second number</label>
+        <input type="text", id="second entry box", name="second num">
+    </div>
+    <div>
+        <script src="actions.js"></script>
+        <button onclick="add()" >+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="divide()">/</button>
+        <button onclick="multiply()">*</button>
+    </div>
+    <div>
+        <h1 id="answer">ANSWER<h1>
+    </div>
+
+    
+</body>
+</html>
