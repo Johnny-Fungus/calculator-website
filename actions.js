@@ -36,14 +36,14 @@ function add(){
     input2 = document.getElementById("second entry box").value
     // only checking value here because something with a value of "" must have a type of string
     if (input1 == "" || input2 == "") {
-        document.getElementById("answer").innerHTML = "Both Fields Must Be Filled"
+        document.getElementById("answer").innerText = "Both Fields Must Be Filled"
     // NaN is the only value in Javascript that doesnt equal itself, therefor you have to check for it by checking if two of the same thing is equal or not
     // if Number(input1) == NaN won't work
     // if Number(input1) != Number(input1) then it must be NaN
     } else if (Number(input1) != Number(input1) || Number(input2) != Number(input2)) {
-        document.getElementById("answer").innerHTML = "Input Must Be A Number"
+        document.getElementById("answer").innerText = "Input Must Be A Number"
     } else {
-        document.getElementById("answer").innerHTML = Number(input1) + Number(input2)
+        document.getElementById("answer").innerText = Number(input1) + Number(input2)
     }
 }
 
@@ -52,11 +52,11 @@ function subtract(){
     input2 = document.getElementById("second entry box").value
 
     if (input1 == "" || input2 == "") {
-        document.getElementById("answer").innerHTML = "Both Fields Must Be Filled"
+        document.getElementById("answer").innerText = "Both Fields Must Be Filled"
     } else if (Number(input1) != Number(input1) || Number(input2) != Number(input2)) {
-        document.getElementById("answer").innerHTML = "Input Must Be A Number"
+        document.getElementById("answer").innerText = "Input Must Be A Number"
     } else {
-        document.getElementById("answer").innerHTML = Number(input1) - Number(input2)
+        document.getElementById("answer").innerText = Number(input1) - Number(input2)
     }
 }
 
@@ -65,13 +65,13 @@ function divide(){
     input2 = document.getElementById("second entry box").value
     
     if (input1 == "" || input2 == "") {
-        document.getElementById("answer").innerHTML = "Both Fields Must Be Filled"
+        document.getElementById("answer").innerText = "Both Fields Must Be Filled"
     } else if (Number(input1) != Number(input1) || Number(input2) != Number(input2)) {
-        document.getElementById("answer").innerHTML = "Input Must Be A Number"
+        document.getElementById("answer").innerText = "Input Must Be A Number"
     } else if (Number(input2) == 0) {
-        document.getElementById("answer").innerHTML = "Divide By Zero Error"
+        document.getElementById("answer").innerText = "Divide By Zero Error"
     } else {
-        document.getElementById("answer").innerHTML = Number(input1) / Number(input2)
+        document.getElementById("answer").innerText = Number(input1) / Number(input2)
     }
 }
 
@@ -80,11 +80,11 @@ function multiply(){
     input2 = document.getElementById("second entry box").value
 
     if (input1 == "" || input2 == "") {
-        document.getElementById("answer").innerHTML = "Both Fields Must Be Filled"
+        document.getElementById("answer").innerText = "Both Fields Must Be Filled"
     } else if (Number(input1) != Number(input1) || Number(input2) != Number(input2)) {
-        document.getElementById("answer").innerHTML = "Input Must Be A Number"
+        document.getElementById("answer").innerText = "Input Must Be A Number"
     } else {
-        document.getElementById("answer").innerHTML = Number(input1) * Number(input2)
+        document.getElementById("answer").innerText = Number(input1) * Number(input2)
     }
 }
 
@@ -93,12 +93,12 @@ function modulus(){
     input2 = document.getElementById("second entry box").value
 
     if (input1 == "" || input2 == "") {
-        document.getElementById("answer").innerHTML = "Both Fields Must Be Filled"
+        document.getElementById("answer").innerText = "Both Fields Must Be Filled"
     } else if (Number(input1) != Number(input1) || Number(input2) != Number(input2)) {
-        document.getElementById("answer").innerHTML = "Input Must Be A Number"
+        document.getElementById("answer").innerText = "Input Must Be A Number"
     } else if (Number(input2) == 0) {
-        document.getElementById("answer").innerHTML = "Modulus By Zero Error"
+        document.getElementById("answer").innerText = "Modulus By Zero Error"
     } else {
-        document.getElementById("answer").innerHTML = Number(input1) % Number(input2)
+        document.getElementById("answer").innerText = Number(input1) % Number(input2)
     }
 }

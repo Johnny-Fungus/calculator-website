@@ -1,0 +1,20 @@
+/*
+use # to specify an id
+use . to specify a class
+*/
+
+body{
+    background-color: coral;
+}
+
+div{
+    background-color: bisque;
+}
+
+#input_boxes{
+    background-color: aqua;
+}
+
+#buttons{
+    background-color: darkseagreen;
+}
