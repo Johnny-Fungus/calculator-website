@@ -9,6 +9,8 @@ body{
 
 div{
     background-color: bisque;
+    margin: auto;
+    width: 50%;
 }
 
 #input_boxes{
@@ -17,4 +19,23 @@ div{
 
 #buttons{
     background-color: darkseagreen;
+}
+
+#calc_div{
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+h1{
+    text-align: center;
+    /*sans-serif is a fall back family of fonts to choose from if the specific font of arial isnt available*/
+    font-family: arial, sans-serif;
+    font-size: 100px;
+
+}
+
+p{
+    text-align: center;
+    font-family: arial, sans-serif;
 }

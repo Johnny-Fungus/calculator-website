@@ -6,7 +6,7 @@
     <title>Calculator</title>
     <link rel = "stylesheet", href = "style.css">
 </head>
-<body style="background-color: coral;">
+<body>
     <!--
         type in 2 numbers and be able to either add, subtract, multiply, or divide them
         2 boxes, one number in each box
@@ -24,7 +24,8 @@
             the value of an empty input box is not zero, it is an empty string, when you put that into the Number() function it returns 0
 
     -->
-    <div>
+    <div><h1>Calculator</h1></div>
+    <div id = "calc_div">
         <div id = "input_boxes">
             <label for="first entry box">first number</label>
             <input type="text", id="first entry box", name="first num">
@@ -38,9 +39,10 @@
             <button onclick="subtract()">-</button>
             <button onclick="divide()">/</button>
             <button onclick="multiply()">*</button>
+            <button onclick="modulus()">%</button>
         </div>
         <div>
-            <h1 id="answer">ANSWER<h1>
+            <p id="answer">ANSWER</p>
         </div>
     </div>
 
