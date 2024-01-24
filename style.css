@@ -22,19 +22,10 @@ div{
     width: 50%;
 }
 
-#input_boxes{
-    background-color: aqua;
-}
-
-#buttons{
-    background-color: darkseagreen;
-}
-
 #calc_div{
     height: 300px;
     border-radius: 10px;
     background-color: rgb(64, 61, 57);
-
 }
 
 #input_boxes{
@@ -50,6 +41,9 @@ div{
 }
 
 #buttons{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
     height: 50%;
     width: 100%;
     border-bottom-left-radius: 10px;
@@ -81,4 +75,9 @@ p{
     font-family: arial, sans-serif;
     color: rgb(235, 94, 40);
     font-size: 50px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
 }
