@@ -34,6 +34,9 @@ div{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: rgb(64, 61, 57);
+    display: grid;
+    grid-template-columns: 37% 37%;
+    justify-items: left;
     /*top bottom, right left*/
     /*padding adds space between the content and the border, 
       which increases the dimensions of the div instead of shrinking the content*/
@@ -52,13 +55,17 @@ div{
 }
 
 input{
-
+    background-color: rgb(204, 197, 185);
+    width: 120px;
+    height: 25px;
+    margin-top: 10px;
 }
 
 label{
     font-family: arial, sans-serif;
     color: rgb(235, 94, 40);
     font-size: 25px;
+    margin: 10px;
 }
 
 h1{
@@ -80,4 +87,9 @@ p{
 button{
     height: 100px;
     width: 100px;
+    background-color: rgb(204, 197, 185);
+}
+
+#answer_div{
+    width: 75%;
 }
